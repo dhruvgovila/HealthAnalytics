@@ -15,6 +15,7 @@
 		B2AB044E28E0E77C009AE91F /* HealthAnalyticsWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B2AB044928E0E77A009AE91F /* HealthAnalyticsWidget.intentdefinition */; };
 		B2AB045128E0E77C009AE91F /* HealthAnalyticsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B2AB044328E0E77A009AE91F /* HealthAnalyticsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B2AB045728E0EA2D009AE91F /* HealthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB045628E0EA2D009AE91F /* HealthHelper.swift */; };
+		B2AB045928E103BE009AE91F /* HealthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB045628E0EA2D009AE91F /* HealthHelper.swift */; };
 		B2FF77A728E0A7470086D40C /* HealthAnalyticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FF77A628E0A7470086D40C /* HealthAnalyticsApp.swift */; };
 		B2FF77A928E0A7470086D40C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FF77A828E0A7470086D40C /* ContentView.swift */; };
 		B2FF77AB28E0A7490086D40C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FF77AA28E0A7490086D40C /* Assets.xcassets */; };
@@ -323,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2AB044828E0E77A009AE91F /* HealthAnalyticsWidget.swift in Sources */,
+				B2AB045928E103BE009AE91F /* HealthHelper.swift in Sources */,
 				B2AB044D28E0E77C009AE91F /* HealthAnalyticsWidget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,33 +10,33 @@ import SwiftUI
 import Intents
 
 struct Provider: IntentTimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent())
+    func placeholder(in context: Context) -> StepsEntry {
+        StepsEntry(date: Date(), steps: 1000, configuration: ConfigurationIntent())
     }
 
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration)
+    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (StepsEntry) -> ()) {
+        let entry = StepsEntry(date: Date(), steps: 1000, configuration: configuration)
         completion(entry)
     }
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
+        var entry: StepsEntry
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
-            entries.append(entry)
-        }
+        let refreshDate = Calendar.current.date(byAdding: .second, value: 1, to: currentDate)!
 
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
+        HealthHelper.shared.getTodaysSteps { steps in
+            let entry: StepsEntry = .init(date: .now,
+                                          steps: steps,
+                                          configuration: configuration)
+            let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
+            completion(timeline)
+        }
     }
 }
 
-struct SimpleEntry: TimelineEntry {
+struct StepsEntry: TimelineEntry {
     let date: Date
+    let steps: Double
     let configuration: ConfigurationIntent
 }
 
@@ -44,7 +44,7 @@ struct HealthAnalyticsWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        Text("Steps Today: \(String(format: "%.0f", entry.steps))")
     }
 }
 
@@ -63,7 +63,7 @@ struct HealthAnalyticsWidget: Widget {
 
 struct HealthAnalyticsWidget_Previews: PreviewProvider {
     static var previews: some View {
-        HealthAnalyticsWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        HealthAnalyticsWidgetEntryView(entry: StepsEntry(date: Date(), steps: 1000, configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
