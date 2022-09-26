@@ -3,4 +3,133 @@
    uuid = "7F760FF3-6CF6-40C7-BE31-BCCF42E09EDE"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D72AFA48-0C2C-4A09-9368-4547BB26F635"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HealthAnalytics/HealthHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "askAuthorization(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B469883-3D95-4C44-9FBE-5E80713D80E5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HealthAnalytics/HealthHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "askAuthorization(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CBCB4A4E-2167-4185-8053-CAE2B75DC985"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HealthAnalytics/HealthHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getTodaysSteps(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "71BC396D-AEB5-4D61-9205-C3CC6366C061"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HealthAnalytics/HealthHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "getTodaysSteps(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "71BC396D-AEB5-4D61-9205-C3CC6366C061 - d54001522e69c236"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.HKStatisticsQuery, Swift.Optional&lt;__C.HKStatistics&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HealthAnalytics.HealthHelper.getTodaysSteps(completion: (Swift.Double) -&gt; ()) -&gt; ()"
+                  moduleName = "HealthAnalytics"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhruvgovila/Documents/Projects/HealthAnalytics/HealthAnalytics/HealthHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "71BC396D-AEB5-4D61-9205-C3CC6366C061 - d54001522e69c236"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.HKStatisticsQuery, Swift.Optional&lt;__C.HKStatistics&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HealthAnalytics.HealthHelper.getTodaysSteps(completion: (Swift.Double) -&gt; ()) -&gt; ()"
+                  moduleName = "HealthAnalytics"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhruvgovila/Documents/Projects/HealthAnalytics/HealthAnalytics/HealthHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "71BC396D-AEB5-4D61-9205-C3CC6366C061 - d54001522e69c236"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.HKStatisticsQuery, Swift.Optional&lt;__C.HKStatistics&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HealthAnalytics.HealthHelper.getTodaysSteps(completion: (Swift.Double) -&gt; ()) -&gt; ()"
+                  moduleName = "HealthAnalytics"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhruvgovila/Documents/Projects/HealthAnalytics/HealthAnalytics/HealthHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20D485B9-D1D7-4789-A67F-C47A1C84F310"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HealthAnalytics/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -10,6 +10,8 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    @Environment(\.scenePhase) var scenePhase
+    
     @State var steps: Double = 0
     @State var didUpdateSteps = false
     @FetchRequest(
@@ -26,6 +28,17 @@ struct ContentView: View {
             }
         }.onAppear {
             fetchStepsData()
+        }.onChange(of: scenePhase) { newValue in
+            switch newValue {
+            case .background:
+                break
+            case .inactive:
+                break
+            case .active:
+                fetchStepsData()
+            @unknown default:
+                break
+            }
         }
     }
     
